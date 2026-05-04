@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Sesi 3 - Portfolio Earth Tone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Brand</div>
+      <nav class="top-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Biodata</a>
+        <a href="#portfolio">Portofolio</a>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <span class="eyebrow">Selamat Datang</span>
+          <h1>Website Portfolio Pribadi</h1>
+          <p>
+            Saya membuat desain ini menggunakan HTML, CSS, dan layout grid agar
+            tampak modern dengan nuansa earth tone yang hangat.
+          </p>
+
+          <button
+            type="button"
+            class="btn btn-custom-coklat"
+            data-bs-toggle="modal"
+            data-bs-target="#modalBiodata"
+          >
+            Pelajari Lebih Lanjut
+          </button>
+        </div>
+        <div class="hero-image">
+          <img src="Header Image.jpg" alt="Header Image" />
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p>Perkenalan singkat tentang diri saya sebagai calon developer.</p>
+        </div>
+        <div class="about-grid">
+          <div class="info-card">
+            <h3>Nama Lengkap</h3>
+            <p>Panca Ardhito Sanjaya</p>
+          </div>
+          <div class="info-card">
+            <h3>Pendidikan</h3>
+            <p>Universitas Terbuka</p>
+          </div>
+          <div class="info-card">
+            <h3>Pekerjaan</h3>
+            <p>Barista</p>
+          </div>
+          <div class="info-card">
+            <h3>Kontak</h3>
+            <p>hitosanjaya@gmail.com</p>
+          </div>
+          <div class="info-card">
+            <h3>Hobi</h3>
+            <p>Tidur</p>
+          </div>
+          <div class="info-card">
+            <h3>Alamat</h3>
+            <p>Tangerang</p>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="container portfolio-section py-5">
+        <div class="section-header text-center mb-5">
+          <h2>Portofolio</h2>
+          <p>Beberapa contoh proyek yang pernah saya kerjakan.</p>
+        </div>
+
+        <div class="row">
+          <!-- Proyek 1 -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <article
+              class="project-card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProyek1"
+              style="cursor: pointer"
+            >
+              <img
+                src="Portofolio dummy 1.jpg"
+                class="img-fluid rounded"
+                alt="Proyek 1"
+              />
+              <h3 class="mt-3">Proyek 1</h3>
+              <p>Deskripsi proyek 1</p>
+            </article>
+          </div>
+
+          <!-- Proyek 2 -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <article
+              class="project-card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProyek2"
+              style="cursor: pointer"
+            >
+              <img
+                src="Portofolio dummy 2.jpg"
+                class="img-fluid rounded"
+                alt="Proyek 2"
+              />
+              <h3 class="mt-3">Proyek 2</h3>
+              <p>Deskripsi proyek 2</p>
+            </article>
+          </div>
+
+          <!-- Proyek 3 -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <article
+              class="project-card h-100"
+              data-bs-toggle="modal"
+              data-bs-target="#modalProyek3"
+              style="cursor: pointer"
+            >
+              <img
+                src="Portofolio dummy 3.jpg"
+                class="img-fluid rounded"
+                alt="Proyek 3"
+              />
+              <h3 class="mt-3">Proyek 3</h3>
+              <p>Deskripsi proyek 3</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Proyek 1 -->
+    <div class="modal fade" id="modalProyek1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="background-color: #632e0a; color: white"
+          >
+            <h5 class="modal-title">Detail Proyek 1</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="Portofolio dummy 1.jpg"
+              class="img-fluid mb-3 rounded"
+              alt="Proyek 1"
+            />
+            <h6>Tentang Proyek:</h6>
+            <p>
+              Proyek ini dikembangkan oleh Panca Ardhito Sanjaya sebagai bagian
+              dari tugas design sekolah pada tahun 2016.
+            </p>
+            <p>
+              Menggunakan photoshop untuk mengedit gambar dan menciptakan
+              komposisi visual yang menarik
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="https://github.com/hitzori"
+              target="_blank"
+              class="btn btn-custom-coklat"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Proyek 2 -->
+    <div class="modal fade" id="modalProyek2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="background-color: #632e0a; color: white"
+          >
+            <h5 class="modal-title">Detail Proyek 2</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="Portofolio dummy 2.jpg"
+              class="img-fluid mb-3 rounded"
+              alt="Proyek 2"
+            />
+            <h6>Tentang Proyek:</h6>
+            <p>
+              Proyek ini merupakan hasil design saat sekolah pada tahun 2017,
+              dengan fokus pada pengembangan konsep visual menggunakan teknik
+              digital art.
+            </p>
+            <p>
+              Menggunakan photoshop untuk mengedit gambar dan menciptakan visual
+              yang menarik
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="https://github.com/hitzori"
+              target="_blank"
+              class="btn btn-custom-coklat"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Proyek 3 -->
+    <div class="modal fade" id="modalProyek3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header"
+            style="background-color: #632e0a; color: white"
+          >
+            <h5 class="modal-title">Detail Proyek 3</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="Portofolio dummy 3.jpg"
+              class="img-fluid mb-3 rounded"
+              alt="Proyek 3"
+            />
+            <h6>Tentang Proyek:</h6>
+            <p>
+              Proyek ini merupakan hasil design saat sekolah pada tahun 2019,
+              dengan fokus pada tema summer
+            </p>
+            <p>
+              Menggunakan Photoshop untuk mengedit gambar dan menciptakan
+              komposisi visual yang menarik dengan tema summer
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <a
+              href="https://github.com/hitzori"
+              target="_blank"
+              class="btn btn-custom-coklat"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 Hito. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
