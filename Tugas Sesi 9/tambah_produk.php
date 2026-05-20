@@ -20,7 +20,7 @@ if (!isset($_SESSION['login']) || $_SESSION['role'] !== 'admin') {
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-5">
+        <div class="col-md-5">s
             <div class="card shadow-sm border-0" style="border-radius: 20px;">
                 <div class="card-body p-4">
                     <h3 class="fw-bold mb-4 text-center">Tambah Produk Baru</h3>
